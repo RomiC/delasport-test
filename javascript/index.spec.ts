@@ -1,9 +1,5 @@
 import {Ticket, Route, Journey} from './index';
 
-test('est', () => {
-  expect(true).toEqual(true);
-});
-
 describe('Journey', () => {
   it('should throw an error on empty list', () => {
     expect(() => new Journey([])).toThrowError('No info about the journey. Tickets list is empty!');
