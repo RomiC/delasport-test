@@ -11,7 +11,7 @@ Create a proper data model and write an algorithm in JavaScript that will discov
 
 You may find my solution in `index.ts` file. Examples of usage you may find in `index.spec.ts`. To run tests, execute the following command in your terminal:
 ```sh
-npm && npm t
+npm i && npm t
 ```
 
 ### Additional info
