@@ -1,0 +1,23 @@
+{
+  "name": "delasport-html",
+  "version": "1.0.0",
+  "description": "Delasport html test task",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -op 8989 ./",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RomiC/delasport-test.git"
+  },
+  "author": "Roman Charugin <i@charugin.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RomiC/delasport-test/issues"
+  },
+  "homepage": "https://github.com/RomiC/delasport-test#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

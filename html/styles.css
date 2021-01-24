@@ -1,0 +1,259 @@
+:root {
+  --color-bg-main: #232A34;
+  --color-bg-accent: #1A212B;
+  --color-bg-accent-light: #323943;
+  --color-fg-main: #7C8491; 
+  --color-fg-accent: #FEFEFE; 
+  --color-fg-highlight: #736356;
+  --color-bg-button-main: #23D669;
+  --color-bg-button-secondary: #313840;
+
+  --font-size: 10px;
+  --font-size-s: 8px;
+  --font-size-l: 12px;
+  --font-size-xl: 14px;
+}
+
+/** Init layout */
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: var(--font-size);
+}
+body {
+  background-color: var(--color-bg-main);
+  margin: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/** Basic Layout */
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  width: 773px;
+}
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+}
+.section__header {
+  flex: 1 0 100%;
+  font-size: var(--font-size-xl);
+  color: var(--color-fg-accent);
+  margin: 0;
+  padding: 18px 0 12px;
+  width: 100%;
+}
+
+
+/** Buttons */
+.button {
+  background-color: var(--color-bg-button-secondary);
+  border: 1px solid var(--color-bg-button-secondary);
+  border-radius: 25px;
+  color: var(--color-fg-main);
+  justify-content: space-between;
+  display: inline-flex;
+  font-size: var(--font-size-l);
+  padding: 8px 20px;
+}
+.button--transparent {
+  background-color: transparent;
+}
+.button--main {
+  background-color: var(--color-bg-button-main);
+  border-color: var(--color-bg-button-main);
+  color: var(--color-fg-accent);
+}
+.button__icon {
+  height: 16px;
+  width: 16px;
+}
+
+
+/** Header */
+.header {
+  background-color: var(--color-bg-accent);
+  height: 50px;
+  width: 100%;
+}
+.language {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 110px;
+}
+
+
+/** Main */
+
+/** Partnerships */
+.partnership {
+  color: var(--color-fg-main);
+  padding: 18px 0;
+}
+.partnership__list {
+  display: flex;
+}
+.partnership__item {
+  align-items: center;
+  display: flex;
+  padding: 0 12px;
+  width: 120px;
+}
+.partnership__item + .partnership__item {
+  border-left: 1px solid var(--color-bg-accent-light);
+}
+.partnership__logo {
+  height: 21px;
+  width: 21px;
+}
+.partnership__name {
+  margin-left: 8px;
+}
+
+/** Login */
+.login__button + .login__button {
+  margin-left: 8px;
+}
+
+/** Banners */
+.banners {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+/** Sport categories */
+.categories {
+  display: block;
+  font-size: var(--font-size-s);
+  width: 100%;
+}
+.categories__list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.categories__item {
+  width: 5.555%
+}
+.categories__link {
+  align-items: center;
+  color: var(--color-fg-main);
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  text-decoration: none;
+}
+.categories__link:after {
+  background-color: var(--color-bg-accent);
+  border-radius: 10px;
+  display: block;
+  height: 32px;
+  position: absolute;
+  content: '';
+  top: 4px;
+  width: 32px;
+  z-index: -1;
+}
+.categories__icon {
+  color: var(--color-fg-highlight);
+  height: 16px;
+  margin: 12px;
+  width: 16px;
+}
+
+/** Game Providers */
+.providers {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.providers__item {
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  height: 42px;
+  justify-content: center;
+  width: 16%;
+}
+
+
+/** Footer */
+.footer {
+  margin-top: 22px;
+  padding-bottom: 12px;
+}
+.footer .section {
+  align-items: flex-start;
+}
+
+/** About */
+.about {
+  color: var(--color-fg-main);
+  width: 145px;
+}
+
+/** Secondary menu */
+.secondary-menu {
+  width: 110px;
+  padding-left: 4px;
+}
+.secondary-menu__header {
+  color: var(--color-fg-accent);
+  margin: 0;
+  padding: 10px 0 12px;
+}
+.secondary-menu__item + .secondary-menu__item {
+  margin-top: 8px;
+}
+.secondary-menu__link {
+  color: var(--color-fg-main);
+  text-decoration: none;
+}
+
+/** Socials */
+.socials {
+  width: 185px;
+}
+.socials__header {
+  color: var(--color-fg-accent);
+  margin: 0;
+  padding: 10px 0 12px;
+}
+.socials__list {
+  display: flex;
+}
+.socials__item {
+  background-color: var(--color-bg-accent);
+  border-radius: 50%;
+}
+.socials__item + .socials__item {
+  margin-left: 10px;
+}
+.socials__link {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+.socials__icon {
+  color: var(--color-fg-highlight);
+  height: 12px;
+  width: 12px;
+}

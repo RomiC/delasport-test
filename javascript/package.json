@@ -1,0 +1,25 @@
+{
+  "name": "delasport-js",
+  "version": "1.0.0",
+  "description": "Delasport JS test task",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RomiC/delasport-test.git"
+  },
+  "author": "Roman Charugin <i@charugin.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RomiC/delasport-test/issues"
+  },
+  "homepage": "https://github.com/RomiC/delasport-test#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1"
+  }
+}
