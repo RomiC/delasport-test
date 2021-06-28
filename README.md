@@ -15,7 +15,7 @@ Urna cursus eget nunc scelerisque viverra mauris in. Nisl pretium fusce id velit
 
 Delasport Test task
 
-## Solutions
+## ⚠️Solutions
 
 You may find in an appropriate folder:
 * `html` - for styling task
